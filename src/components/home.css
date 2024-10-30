@@ -1,0 +1,113 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.home-info {
+  width: 40%;
+  font-size: 16px;
+  color: #333;
+}
+
+.home-info h1 {
+  color: #ff6666;
+  font-size: 2.5em;
+}
+
+.home-info h2 {
+  color: #555;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.home-photo {
+  width: 40%;
+  text-align: center;
+}
+
+.home-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(255, 102, 102, 0.5);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  position: absolute; 
+  bottom: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s;
+  margin: 0 10px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.html {
+  background-color: #e44d26;
+}
+
+.css {
+  background-color: #2965f1;
+}
+
+.php {
+  background-color: #4f5b93;
+}
+
+.csharp {
+  background-color: #178600;
+}
+
+.sql {
+  background-color: #f29111;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-info {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .home-photo {
+    width: 100%;
+  }
+
+  .home-photo img {
+    width: 150px;
+  }
+
+  .skills {
+    position: static; 
+    transform: none;
+    margin-top: 1em; 
+  }
+}

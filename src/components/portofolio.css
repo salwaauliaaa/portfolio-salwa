@@ -1,0 +1,47 @@
+.portfolio {
+  padding: 2em;
+  text-align: center;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.project {
+  width: 300px; 
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}
+
+.project p {
+  font-weight: bold;
+  color: #ff66b2;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    width: 200px; 
+  }
+}
